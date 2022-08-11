@@ -12,8 +12,10 @@ public class Airport implements Comparable<Airport>{
 	private Double longitude;
 	private Double timezoneOffset;
 	
+	
+	
 	public Airport(int id, String iataCode, String airportName, String city, String state, String country,
-			Double latitude, Double longitude, Double timezoneOffset) {
+				   Double latitude, Double longitude, Double timezoneOffset) {
 		this.id = id;
 		this.iataCode = iataCode;
 		this.airportName = airportName;
@@ -25,6 +27,8 @@ public class Airport implements Comparable<Airport>{
 		this.timezoneOffset = timezoneOffset;
 	}
 
+	
+	
 	public int getId() {
 		return id;
 	}

@@ -5,7 +5,9 @@ public class TestModel {
 	public static void main(String[] args) {
 		
 		Model model = new Model();
-
+		
+		model.creaGrafo(10);
+		System.out.println("Numero vertici grafo (x=10): "+model.getNumVertici());
 	}
 
 }

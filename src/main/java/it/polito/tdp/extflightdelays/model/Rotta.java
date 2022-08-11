@@ -1,17 +1,26 @@
 package it.polito.tdp.extflightdelays.model;
 
 public class Rotta {
+	
+	//ATTRIBUTI:
 	private Airport a1;
 	private Airport a2;
 	private int nVoli;
 	
+	
+	
+	//COSTRUTTORE:
 	public Rotta(Airport a1, Airport a2, int nVoli) {
-		super();
+	
 		this.a1 = a1;
 		this.a2 = a2;
 		this.nVoli = nVoli;
 	}
 
+	
+	
+	//METODI GETTER E SETTER:
+	
 	public Airport getA1() {
 		return a1;
 	}
@@ -20,6 +29,7 @@ public class Rotta {
 		this.a1 = a1;
 	}
 
+	
 	public Airport getA2() {
 		return a2;
 	}
@@ -28,6 +38,7 @@ public class Rotta {
 		this.a2 = a2;
 	}
 
+	
 	public int getnVoli() {
 		return nVoli;
 	}
@@ -35,7 +46,5 @@ public class Rotta {
 	public void setnVoli(int nVoli) {
 		this.nVoli = nVoli;
 	}
-	
-	
 	
 }

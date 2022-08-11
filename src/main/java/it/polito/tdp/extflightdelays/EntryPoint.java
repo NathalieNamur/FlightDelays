@@ -9,16 +9,18 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-
 public class EntryPoint extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
+    	
     	FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Scene.fxml"));
     	Parent root = loader.load();
-        Scene scene = new Scene(root);
+        
+    	Scene scene = new Scene(root);
          
         Model model = new Model();
+        
         FXMLController controller = loader.getController();
         controller.setModel(model);
         

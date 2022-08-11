@@ -17,9 +17,11 @@ public class Flight {
 	private LocalDateTime arrivalDate;
 	private Double arrivalDelay;
 
+	
+	
 	public Flight(int id, int airlineId, int flightNumber, String tailNumber, int originAirportId,
-			int destinationAirportId, LocalDateTime scheduledDepartureDate, Double departureDelay, Double elapsedTime,
-			int distance, LocalDateTime arrivalDate, Double arrivalDelay) {
+				  int destinationAirportId, LocalDateTime scheduledDepartureDate, Double departureDelay, Double elapsedTime,
+				  int distance, LocalDateTime arrivalDate, Double arrivalDelay) {
 		this.id = id;
 		this.airlineId = airlineId;
 		this.flightNumber = flightNumber;
@@ -34,6 +36,8 @@ public class Flight {
 		this.arrivalDelay = arrivalDelay;
 	}
 
+	
+	
 	public int getId() {
 		return id;
 	}
